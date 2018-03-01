@@ -1,0 +1,208 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+html, body {
+	background-color: #fff;
+	color: #636b6f;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	height: 100vh;
+	margin: 0;
+}
+
+button
+{
+    cursor: pointer;
+}
+
+.flashMsg
+{
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    bottom: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 10px 30px;
+    z-index: 100;
+    min-width: 300px;
+}
+.flashMsgSuccess
+{
+    background: #86bd00;
+    color: #fff;
+    text-align: center;
+}
+
+.flashMsgError
+{
+    background: #bf0000;
+    color: #fff;
+    text-align: center;
+}
+
+.full-height {
+	height: 100vh;
+}
+
+.flex-center {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.position-ref {
+	position: relative;
+}
+
+.top-right {
+	position: absolute;
+	right: 10px;
+	top: 18px;
+}
+
+.content {
+	text-align: center;
+}
+
+.title {
+	font-size: 84px;
+}
+
+.links > a {
+	color: #636b6f;
+	padding: 0 25px;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: .1rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.m-b-md {
+	margin-bottom: 30px;
+}
+
+.wrapper
+{
+	flex-direction: column;
+	justify-content: space-evenly;
+	position: relative;
+}
+
+.active
+{
+	color: #007bff !important;
+}
+
+.content
+{
+	height: 60%;
+	justify-content: space-around;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+
+	form
+	{
+		>div
+		{
+			display: flex;
+			justify-content: space-between;
+			margin: 20px auto;
+			
+			label
+			{
+				font-size: 20px;
+				font-weight: 400;
+			}
+
+			input
+			{
+				height: 30px;
+			}
+
+			input[type="submit"]
+			{
+				background: #636b86;
+				margin: 0 auto;
+				border: 1px solid #636b86;
+				border-radius: 5px;
+				width: 150px;
+				color: #fff;
+				font-size: 18px;
+				padding: 3px 10px;
+				height: auto;
+				cursor: pointer;
+				&:hover
+				{
+					color: #636b86;
+					background: #fff;
+				}
+			}
+		}
+	}
+}
+
+.socialMediaLink
+{
+	border: 1px solid #636b86;
+	margin: 10px;
+	padding: 7px 10px;
+	background: #636b86;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 600;
+	text-decoration: none !important;
+	&:hover
+	{
+		color: #636b86;
+		background: #fff;
+	}
+}
+
+table
+{
+	text-align: left;
+
+	thead
+	{
+		th
+		{
+			border: 1px solid black;
+			padding: 3px 8px;
+		}
+	}
+
+	tbody
+	{
+		tr
+		{
+			td
+			{
+				border: 1px solid black;
+				padding: 3px 8px;
+				color: #000;
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+.capitelize
+{
+	text-transform: capitalize;
+}
